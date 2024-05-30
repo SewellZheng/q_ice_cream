@@ -35,6 +35,15 @@
             height: 400px;
             margin: 20px 0;
         }
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
         footer {
             background-color: #ffcb05;
             text-align: center;
@@ -42,6 +51,27 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .product-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .product-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .product-item {
+            flex: 1 1 200px;
+            max-width: 300px;
+            text-align: center;
         }
     </style>
 </head>
@@ -51,10 +81,14 @@
     </header>
     <div class="container">
         <h2>歡迎光臨！</h2>
-        <p>我們的店提供各種美味的剉冰，使用天然的黑砂糖和新鮮食材，帶給您最純正的台灣風味。</p>
+        <p>我們店提供各種美味的剉冰，使用天然的黑砂糖和手工煮的新鮮食材，帶給您最純正的台灣風味。</p>
         <p>地址：242新北市新莊區中平路82巷14號</p>
         <p>營業時間：每日 11:00 - 21:30</p>
-        <p>電話：0966305360</p>
+        <p>電話：0966-305-360</p>
+
+        <div class="image">
+            <img src="店面街道圖.jpg" alt="陳Q黑砂糖剉冰中平店">
+        </div>
 
         <h2>地圖位置</h2>
         <div class="map">
@@ -63,14 +97,30 @@
 
         <h2>特色剉冰推薦</h2>
         <ul>
-            <li>黑砂糖刨冰</li>
-            <li>紅豆牛奶冰</li>
-            <li>芒果冰沙</li>
-            <li>抹茶紅豆冰</li>
+            <li>黑砂糖刨冰系列</li>
+            <li>牛奶冰系列</li>
+            <li>雪花冰系列</li>
+            <li>綜合豆花系列</li>
+            <li>綜合嫩仙草系列</li>
+            <li>黑糖珍珠鮮奶系列</li>
+            <li>冬季限定系列</li>
         </ul>
+
+        <h2>商品展示</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="商品1.jpg" alt="商品1">
+            </div>
+            <div class="product-item">
+                <img src="商品2.jpg" alt="商品2">
+            </div>
+            <div class="product-item">
+                <img src="商品3.jpg" alt="商品3">
+            </div>
+        </div>
     </div>
     <footer>
-        <p>&copy; 2024 陳Q黑砂糖剉冰. 版權所有.</p>
+        <p>&copy; 2024 陳Q黑砂糖剉冰中平店. 版權所有.</p>
     </footer>
 </body>
 </html>
